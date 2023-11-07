@@ -34,18 +34,26 @@
                 <h2 class="text-center">Inserisci i tuoi dati</h2>
                 <div class="cont-info">
                     <ul class="mc-list d-flex justify-content-around align-items-center">
+
                         <li class="d-flex flex-column align-items-center fw-bold name">Nome e Cognome<input
                                 id="inputname" class="mt-2" type="text" value="">
                         </li>
-                        <li class="d-flex flex-column align-items-center fw-bold km">Km da percorrere<input class="mt-2"
-                                type="text"></li>
-                        <li class="d-flex flex-column align-items-center fw-bold eta">Fascia d'età<input class="mt-2"
-                                type="text">
+
+                        <li class="d-flex flex-column align-items-center fw-bold">Km da percorrere<input id="km"
+                                class="mt-2" type="text"></li>
+
+                        <li class="d-flex flex-column align-items-center fw-bold">Fascia d'età<select class="mt-2"
+                                name="etapass" id="eta">
+                                <option value="Minorenne">Minorenne</option>
+                                <option value="Maggiorenne">Maggiorenne</option>
+                                <option value="Over 65">Over 65</option>
+                            </select>
                         </li>
+
                     </ul>
                     <div class="text-center">
                         <button class="btn mc-btn-input btn-genera">Genera</button>
-                        <button class="btn mc-btn-input">Elimina</button>
+                        <button class="btn mc-btn-input btn-elimina">Elimina</button>
                     </div>
                 </div>
             </div>
@@ -57,20 +65,20 @@
                     <ul class="mc-list d-flex justify-content-between align-items-baseline">
                         <li class="mc-bg">
                             <span class="mc-tit">Nome Passeggero</span>
-                            <p class="pt-4 fw-bold">Mirko Cherchi</p>
+                            <p id="passeggero-nome" class="pt-4 fw-bold"></p>
                         </li>
                         <li><span class="fw-bold">Offerta</span>
-                            <p class="text-center pt-4">Tariffa silver</p>
+                            <p id="offerta" class="text-center pt-4"></p>
                         </li>
 
                         <li><span class="fw-bold">Carrozza</span>
-                            <p class="text-center pt-4">8</p>
+                            <p id="carrozza" class="text-center pt-4"></p>
                         </li>
                         <li><span class="fw-bold">Codice CP</span>
-                            <p class="text-center pt-4">15165</p>
+                            <p id="codice" class="text-center pt-4"></p>
                         </li>
                         <li><span class="fw-bold">Costo biglietto</span>
-                            <p class="text-center pt-4">30.99 €</p>
+                            <p id="prezzo-finale" class="text-center pt-4"></p>
                         </li>
                     </ul>
                 </div>
