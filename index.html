@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- /font -->
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logo (6).png" type="image/x-icon">
     <!-- mycss -->
     <link rel="stylesheet" href="css/style.css">
     <!-- /mycss -->
@@ -21,6 +23,62 @@
 </head>
 
 <body>
+    <div class="container">
+        <nav>
+            <ul class="mc-list d-flex justify-content-between align-items-center">
+                <li class="img"><img class="logo-mc-big" src="img/pngegg (6).png" alt="logo big"></li>
+                <li><button class="mc-btn btn fw-bold btn-open">Acquista Biglietto</button></li>
+            </ul>
+
+            <div id="compra" class="info-biglietto">
+                <h2 class="text-center">Inserisci i tuoi dati</h2>
+                <div class="cont-info">
+                    <ul class="mc-list d-flex justify-content-around align-items-center">
+                        <li class="d-flex flex-column align-items-center fw-bold name">Nome e Cognome<input
+                                id="inputname" class="mt-2" type="text" value="">
+                        </li>
+                        <li class="d-flex flex-column align-items-center fw-bold km">Km da percorrere<input class="mt-2"
+                                type="text"></li>
+                        <li class="d-flex flex-column align-items-center fw-bold eta">Fascia d'età<input class="mt-2"
+                                type="text">
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <button class="btn mc-btn-input btn-genera">Genera</button>
+                        <button class="btn mc-btn-input">Elimina</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="compila" class="generato">
+                <h2 class="text-center pt-5">Il tuo Biglietto</h2>
+                <div class="cont-mc-biglietto">
+                    <img class="mc-img" src="img/logo (6).png" alt="logo-mini">
+                    <ul class="mc-list d-flex justify-content-between align-items-baseline">
+                        <li class="mc-bg">
+                            <span class="mc-tit">Nome Passeggero</span>
+                            <p class="pt-4 fw-bold">Mirko Cherchi</p>
+                        </li>
+                        <li><span class="fw-bold">Offerta</span>
+                            <p class="text-center pt-4">Tariffa silver</p>
+                        </li>
+
+                        <li><span class="fw-bold">Carrozza</span>
+                            <p class="text-center pt-4">8</p>
+                        </li>
+                        <li><span class="fw-bold">Codice CP</span>
+                            <p class="text-center pt-4">15165</p>
+                        </li>
+                        <li><span class="fw-bold">Costo biglietto</span>
+                            <p class="text-center pt-4">30.99 €</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
 
 
 
